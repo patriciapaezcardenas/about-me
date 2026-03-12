@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 .App-logo {
@@ -15,7 +17,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +37,86 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: source-code-pro, Consolas, "Courier New";
+  background-color: cadetblue;
+  align-items: center;
+  min-height: 20vh;
+  font-weight: 700;
+  font-size: large;
+}
+
+.container__text {
+  width: 50%;
+  color: aliceblue;
+  font-size: 30px;
+  font-weight: 100;
+}
+.project {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  row-gap: 48px;
+  column-gap: 48px;
+  margin-bottom: 80px;
+}
+
+.project__title {
+  font-size: 30px;
+}
+
+.project__img {
+  width: 100%;
+  max-width: 500px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  align-self: center;
+}
+
+.project__link {
+  width: 250px;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.project__link-text {
+  text-decoration-line: none;
+  color: white;
+  background-color: cadetblue;
+  border: 2px solid cadetblue;
+  border-radius: 7%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio {
+  padding: 0 40px 0 40px;
+}
+
+.project {
+  display: flex;
+}
+
+.projects__main {
+  width: 50%;
+}
+
+.projects__description {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.container__contact-icon {
+  width: 30px;
+  height: 30px;
 }
